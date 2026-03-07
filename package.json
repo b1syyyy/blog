@@ -16,6 +16,7 @@
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^14.2.18",
     "@next/third-parties": "^15.0.3",
+    "@openpanel/nextjs": "^1.0.6",
     "@phosphor-icons/react": "^2.1.7",
     "@radix-ui/react-dropdown-menu": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.0",
