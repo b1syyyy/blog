@@ -9,9 +9,10 @@ import { getAllBlogs, type BlogType } from '@/lib/blogs'
 import { ProjectCard } from '@/components/project/ProjectCard'
 import { ActivityCard } from '@/components/home/ActivityCard'
 import { projectHeadLine, projectIntro, projects, blogHeadLine, blogIntro, techIcons } from '@/config/infoConfig'
-import { awards, awardsHeadLine, awardsIntro, activities, activitiesHeadLine, activitiesIntro } from '@/config/projects'
+import { awards, awardsHeadLine, awardsIntro, activities, activitiesHeadLine, activitiesIntro, web } from '@/config/projects'
 import IconCloud from "@/components/ui/icon-cloud"
 import { Award, Briefcase, Heart } from 'lucide-react'
+import { WebCard } from '../components/home/WebCard'
 
 export default async function Home() {
   let blogList = (await getAllBlogs()).slice(0, 4)
@@ -33,6 +34,24 @@ export default async function Home() {
           <div className="relative flex size-full items-center justify-center overflow-hidden w-full px-20 md:px-0 md:w-2/3 ml-auto md:mr-8">
             <IconCloud iconSlugs={techIcons} />
           </div>
+        </div>
+      {/* 常用网站 */}
+        <div className="mx-auto flex flex-col max-w-xl gap-6 lg:max-w-none my-4 py-8 border-t border-muted">
+          <h2 className="flex flex-row items-center justify-start gap-2 text-xl font-semibold tracking-tight md:text-3xl opacity-80 mb-4">
+            <Briefcase size={28}/>
+            {"常用网站"}
+          </h2>
+          <p className="text-base text-muted-foreground max-w-2xl mb-8">
+            {"bilibili, GitHub, Baidu..."}
+          </p>
+          <ul
+            role="list"
+            className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3"
+          >
+            {web.map((web) => (
+              <WebCard key={web.name} web={web} titleAs='h3'/>
+            ))}
+          </ul>
         </div>
 
         {/* Awards */}

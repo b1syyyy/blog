@@ -3,29 +3,45 @@ export * from './education'
 export * from './career'
 
 // personal info
-export const name = 'Derek Hu'
-export const headline = 'Teacher at Shanghai Soong Ching Ling School.'
+export const name = 'b1syyyy'
+export const headline = 'undergraduate student at GDUF'
 export const introduction =
-  "Coucou Les Amis! My name is Derek Hu. I'm from Hubei and an alumnus of BUPT, UChicago, and Tsinghua. I’ve been teaching Computer Science at SCLS since 2020."
-export const email = 'tong.hu@scls-sh.org'
-export const githubUsername = 'derekhut'
+  "雷猴! My name is Dengzhikang,and you can call me b1syyyy. I'm from Guangdong. I'm an undergraduate student at GDUF, majoring in software engineering. I have a strong passion for programming and technology, and I'm always eager to learn new things. I started this blog to share my insights and experiences in the world of computer science, as well as my thoughts on life and personal growth."
+export const githubUsername = 'b1syyyy'
+export const email = '893859442@qq.com'
+
+// 常用网站
+export const commonWebsites = [
+  {
+    name: 'GitHub',
+    href: 'https://github.com/b1syyyy'
+  },
+  {
+    name: 'bilibili',
+    href: 'https://bilibili.com'
+  },
+  {
+    name: 'Baidu',
+    href: 'https://www.baidu.com'
+  },
+]
 
 // about page
 export const aboutMeHeadline = 'Who Are You and Why Should I Care?'
 export const aboutParagraphs = [
-  "Coucou Les Amis! My name is Derek Hu. I'm from Hubei and an alumnus of BUPT, UChicago, and Tsinghua. I’ve been teaching Computer Science at SCLS since 2020.",
-  'Currently I am working on a new course called AI Camp, an innovative course where high school students create real-world products and startups while exploring the frontiers of AI.',
-  "I started this blog to share the insights I learn every day. Most blogs focus on education in Artificial Intelligence and general computer science, while others share the life lessons I've learned.",
+  " 雷猴! My name is Dengzhikang,and you can call me b1syyyy. ",
+  " I'm from Guangdong. I'm an undergraduate student at GDUF, majoring in software engineering. ",
+  " I have a strong passion for programming and technology, and I'm always eager to learn new things. I started this blog to share my insights and experiences in the world of computer science, as well as my thoughts on life and personal growth."
 ]
 
 // blog
-export const blogHeadLine = "What I've thinking about."
+export const blogHeadLine = "What I've thinking about.and what I wanna get"
 export const blogIntro =
-  "I've written something about AI, programming and life."
+  "I've written nothing"
 
 // social links
 export type SocialLinkType = {
-  name: string
+  name: "b1syyyy" | 'Tiktok' | 'Bilibili' | 'GitHub' | 'LinkedIn' | 'Twitter' | 'WeChat'
   ariaLabel?: string
   icon: string
   href: string
@@ -35,12 +51,12 @@ export const socialLinks: Array<SocialLinkType> = [
   {
     name: 'Tiktok',
     icon: 'tiktok',
-    href: 'https://www.tiktok.com/@harvard?lang=en',
+    href: 'https://www.douyin.com/user/MS4wLjABAAAAio23PBaOLl_byV7-z0vHBaFNGReUhhdeQe9QmrkGOjY?from_tab_name=main',
   },
   {
     name: 'Bilibili',
     icon: 'bilibili',
-    href: 'https://space.bilibili.com/349721082',
+    href: 'https://space.bilibili.com/346168633?spm_id_from=333.337.0.0',
   },
 ]
 
