@@ -13,7 +13,7 @@ export function WebCard({ web, titleAs }: { web: WebItemType, titleAs?: keyof JS
       </Card.Title>
       {/* Remove or replace the date display if WebItemType does not have a date property */}
       <Card.Description>{web.description}</Card.Description>
-      <Card.Cta>Read blog</Card.Cta>
+      <Card.Cta>Go ahead</Card.Cta>
     </Card>
   )
 }
