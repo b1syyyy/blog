@@ -7,3 +7,5 @@ python-dotenv
 volcengine-python-sdk
 requests
 os0
+dotenv
+
