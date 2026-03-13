@@ -20,6 +20,6 @@ async def chat_with_ai(request: Request):
     data = await request.json()
     user_message = data.get("prompt")
     # ... 调用火山方舟 ...
-    return {"reply": "回复内容"}
+    return {"reply": "prompt received: " + user_message}  # 这里替换成实际的AI回复
 
 # 不需要 if __name__ == "__main__"
