@@ -2,8 +2,7 @@
 // require('dotenv').config(); // 引入组件样式
 const port  = process.env.PORT || 3000; // 设置端口号
 const AI_API_URL =
-  process.env.NEXT_PUBLIC_AI_API_URL ||
-  '/api/chat' // 替换成你的Vercel AI接口地址
+  process.env.NEXT_PUBLIC_AI_API_URL || '/api/chat' // 替换成你的Vercel AI接口地址
 import { useState, useRef, useEffect } from 'react';
 
 // 悬浮AI对话框组件（TSX版）
