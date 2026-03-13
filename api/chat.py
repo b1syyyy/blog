@@ -8,7 +8,7 @@ app = FastAPI()
 # 允许跨域（你的前端域名）
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://b1syyyy.online", "http://localhost:3000"],
+    allow_origins=["https://b1syyyy.vercel.app/","http://localhost:3001","http://localhost:3000","https://b1syyyy.online","http://www.b1syyyy.online","https://localhost:8000/api/chat"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
