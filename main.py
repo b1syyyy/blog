@@ -17,7 +17,7 @@ app = FastAPI()
 #ku==跨域配置  这个middleware相当于小区门禁 所有数据从这里通过
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://b1syyyy.vercel.app/","http://localhost:3001","http://localhost:3000","http://b1syyyy.online","https://ark.cn-beijing.volces.com/api/v3","https://localhost:8000/api/chat"],#允许访问的域名（前端地址）
+    allow_origins=["https://b1syyyy.vercel.app/","http://localhost:3001","http://localhost:3000","http://b1syyyy.online","http://www.b1syyyy.online","https://localhost:8000/api/chat"],#允许访问的域名（前端地址）
     allow_credentials=True,
     allow_methods=["*"],#允许所有方式的请求
     allow_headers=["*"],#允许所有请求头
