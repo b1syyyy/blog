@@ -11,7 +11,7 @@ from fastapi import FastAPI, Request
 import httpx
 import os
 from volcenginesdkarkruntime import Ark
-
+import asyncio
 app = FastAPI()
 
 #ku==跨域配置  这个middleware相当于小区门禁 所有数据从这里通过
@@ -89,8 +89,11 @@ MODEL_ID=os.getenv("MODEL_ID")
 
 #     uvicorn.run(app="main:app",host="0.0.0.0",port=8000,reload=False)
 
+
+
 @app.post("/api/chat")
 async def chat_with_ai(request: Request):
+
     try:
         data = await request.json()
         user_message = data.get("prompt") or data.get("nromnt")  # 兼容两种字段名
